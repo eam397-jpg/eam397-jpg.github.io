@@ -26,12 +26,27 @@
       background: #89c2d9; /* pastel blue banner */
       color: #ffffff;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2rem 1rem 3rem;
       border-bottom: 4px solid #005f99;
+      position: relative;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #ffffff;
+      position: absolute;
+      left: 50%;
+      top: -75px;
+      transform: translateX(-50%);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      background: #fff;
     }
 
     header h1 {
-      margin: 0;
+      margin-top: 90px; /* pushes text down to fit image */
       font-size: 2.5rem;
       font-weight: 600;
     }
@@ -39,7 +54,7 @@
     header p {
       margin: 0.3rem 0;
       font-size: 1rem;
-      color: #f0f8ff; /* very light blue for secondary text */
+      color: #f0f8ff;
     }
 
     section {
@@ -127,12 +142,12 @@
 <body>
   <!-- Banner Header -->
   <header>
+    <img src="Tech.Image.jpg" alt="Emma Mears Profile Photo">
     <h1>Emma Mears</h1>
     <p>Email: <a href="mailto:eam33@icloud.com" style="color:#ffffff;">eam33@icloud.com</a> | 
        Phone: (401)-533-0657</p>
     <p>Current Address: 22 Estate Drive, Exeter RI 02822</p>
   </header>
-<img src="websiteimage.jpeg">
 
   <div class="container">
     <!-- Education -->
@@ -164,8 +179,8 @@
         <span class="job-title">Medical Assistant (425 hrs)</span> – 
         <span class="company">Osteopathic Family Medicine</span> <span class="date">Jan 2025 – Aug 2025</span>
         <ul>
-          <li>Roomed patients, obtained medical histories, and took vitals.</li>
-          <li>Assisted with procedures, administered injections, ran urinalysis & BP checks.</li>
+          <li>Roomed patients, obtained medical histories, and assisted with procedures.</li>
+          <li>Administered injections and blood pressure checks.</li>
           <li>Provided empathetic, welcoming care for patients.</li>
           <li>Communicated with providers, patients, medical facilities, and insurers.</li>
           <li>Handled prescriptions, referrals, and prior authorizations.</li>
@@ -253,15 +268,14 @@
       <h2>Skills</h2>
       <ul>
         <li>Patient care</li>
-        <li>Taking vitals</li>
         <li>Administering injections</li>
-        <li>Urinalysis</li>
         <li>Healthcare communication</li>
         <li>Team collaboration</li>
         <li>Empathy in patient care</li>
-        <li>Cultural awareness</li>
         <li>Organizational skills</li>
         <li>Customer service</li>
+        <li>Time management</li>
+        <li>Detail oriented</li>
       </ul>
     </section>
 
