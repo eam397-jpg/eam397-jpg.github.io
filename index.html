@@ -4,20 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emma Mears - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      background: #fdf6e3; /* cream background */
-      color: #0047ab; /* brighter royal/navy blue */
+      background: #fffdf7; /* soft cream */
+      color: #003366; /* navy blue */
     }
 
     .container {
       max-width: 900px;
       margin: 2rem auto;
-      padding: 2rem;
+      padding: 1rem;
     }
 
     header {
@@ -27,31 +28,32 @@
 
     header h1 {
       margin: 0;
-      font-size: 2.2rem;
-      color: #003399; /* bold vivid navy */
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #002147; /* deep navy */
     }
 
     header p {
       margin: 0.3rem 0;
       font-size: 1rem;
-      color: #0047ab;
+      color: #004080;
     }
 
     section {
       margin-bottom: 2rem;
       padding: 1.5rem;
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      box-shadow: 0 0 6px rgba(0,0,0,0.05);
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border-left: 6px solid #89c2d9; /* pastel blue accent */
     }
 
     h2 {
-      font-size: 1.4rem;
-      border-bottom: 2px solid #003399;
-      padding-bottom: 0.3rem;
+      font-size: 1.5rem;
       margin-bottom: 1rem;
-      color: #003399;
+      color: #002147;
+      border-bottom: 2px solid #89c2d9;
+      padding-bottom: 0.4rem;
     }
 
     ul {
@@ -60,42 +62,62 @@
     }
 
     ul li {
-      margin: 0.5rem 0;
+      margin: 0.6rem 0;
     }
 
     .job {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
 
     .job-title {
-      font-weight: bold;
-      color: #003399;
+      font-weight: 600;
+      color: #003366;
     }
 
     .company {
       font-style: italic;
-      color: #0055cc;
+      color: #005f99;
     }
 
     .date {
-      float: right;
-      color: #0066cc;
+      background: #e0f2f7;
+      color: #004080;
+      font-size: 0.8rem;
+      padding: 2px 8px;
+      border-radius: 12px;
+      margin-left: 6px;
     }
 
     a {
-      color: #0047ab;
+      color: #005f99;
       text-decoration: none;
+      font-weight: 500;
     }
 
     a:hover {
       text-decoration: underline;
     }
 
+    /* Skills grid */
+    #skills ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem 1rem;
+    }
+
+    #skills li {
+      background: #f0f8ff;
+      padding: 0.5rem 0.8rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+    }
+
     footer {
       text-align: center;
       margin-top: 2rem;
       font-size: 0.9rem;
-      color: #0047ab;
+      color: #004080;
+      padding: 1rem;
     }
   </style>
 </head>
@@ -103,14 +125,12 @@
   <div class="container">
     <header>
       <h1>Emma Mears</h1>
-      <p>Email: <a href="mailto:eam33@icloud.com">eam33@icloud.com</a> |
+      <p>Email: <a href="mailto:eam33@icloud.com">eam33@icloud.com</a> | 
          Phone: (401)-533-0657</p>
       <p>Current Address: 22 Estate Drive, Exeter RI 02822</p>
-      <img src="websiteimage.jpeg">
-    
-      <header>
+    </header>
 
-    <!-- Education Section -->
+    <!-- Education -->
     <section id="education">
       <h2>Education</h2>
       <ul>
@@ -121,16 +141,15 @@
       </ul>
     </section>
 
-    <!-- Work Experience Section -->
+    <!-- Work Experience -->
     <section id="experience">
       <h2>Work Experience</h2>
       <div class="job">
         <span class="job-title">Kitchen Staff / Floor Staff / Cocktail Waitress</span> – 
-        <span class="company">The Nordic, Charlestown RI</span>
-        <span class="date">Apr 2022 – Aug 2024</span>
+        <span class="company">The Nordic, Charlestown RI</span> <span class="date">Apr 2022 – Aug 2024</span>
         <ul>
           <li>Provided friendly and exceptional service to diverse customers.</li>
-          <li>Maintained cleanliness of bathrooms, tables, and restaurant areas.</li>
+          <li>Maintained cleanliness of restaurant areas.</li>
           <li>Communicated with staff effectively using headsets.</li>
           <li>Took orders, served food and drinks, and assisted other servers.</li>
         </ul>
@@ -138,8 +157,7 @@
 
       <div class="job">
         <span class="job-title">Medical Assistant (425 hrs)</span> – 
-        <span class="company">Osteopathic Family Medicine</span>
-        <span class="date">Jan 2025 – Aug 2025</span>
+        <span class="company">Osteopathic Family Medicine</span> <span class="date">Jan 2025 – Aug 2025</span>
         <ul>
           <li>Roomed patients, obtained medical histories, and took vitals.</li>
           <li>Assisted with procedures, administered injections, ran urinalysis & BP checks.</li>
@@ -151,8 +169,7 @@
 
       <div class="job">
         <span class="job-title">Intern</span> – 
-        <span class="company">Choice Physical Therapy, West Warwick RI</span>
-        <span class="date">Jun 2024 – Aug 2024</span>
+        <span class="company">Choice Physical Therapy, West Warwick RI</span> <span class="date">Jun 2024 – Aug 2024</span>
         <ul>
           <li>Shadowed physical therapist for 40 hours, observing patient care strategies.</li>
           <li>Assisted with materials and modeled patient exercises.</li>
@@ -161,43 +178,40 @@
       </div>
     </section>
 
-    <!-- Volunteering Section -->
+    <!-- Volunteering -->
     <section id="volunteering">
       <h2>Volunteering</h2>
       <div class="job">
         <span class="job-title">Volunteer</span> – 
-        <span class="company">South County Hospital</span> 
-        <span class="date">(45 hours)</span>
+        <span class="company">South County Hospital</span> <span class="date">(45 hrs)</span>
         <ul>
-          <li>Restocked nurses’ supply closets outside of patient rooms to ensure efficient care.</li>
-          <li>Assisted patients by providing ice, water, food, and warm blankets to improve comfort and wellbeing.</li>
-          <li>Completed hospital surveys regarding adherence to hand hygiene, falls prevention, and patient experience initiatives.</li>
+          <li>Restocked nurses’ supply closets outside of patient rooms.</li>
+          <li>Assisted patients with ice, water, food, and warm blankets.</li>
+          <li>Completed hospital surveys on hand hygiene, falls prevention, and patient experience.</li>
         </ul>
       </div>
 
       <div class="job">
         <span class="job-title">Shadowing</span> – 
-        <span class="company">Orthopedic Surgeon, Dr. David Moss</span> 
-        <span class="date">(48 hours)</span>
+        <span class="company">Orthopedic Surgeon, Dr. David Moss</span> <span class="date">(48 hrs)</span>
         <ul>
-          <li>Observed orthopedic clinic days (~40 patients per day), gaining insight into patient flow and care delivery.</li>
-          <li>Learned how to explain treatment options and outcomes to patients in a reassuring, empathetic manner.</li>
-          <li>Reviewed X-rays and MRI scans, studying various knee and shoulder injuries and their surgical/non-surgical management.</li>
+          <li>Observed orthopedic clinic days (~40 patients per day).</li>
+          <li>Learned communication strategies for treatment planning with patients.</li>
+          <li>Reviewed X-rays and MRIs to understand common knee and shoulder injuries.</li>
         </ul>
       </div>
     </section>
 
-    <!-- Extracurriculars Section -->
+    <!-- Extracurriculars -->
     <section id="extracurriculars">
       <h2>Extracurriculars</h2>
-
       <div class="job">
         <span class="job-title">Member</span> – 
         <span class="company">American Medical Student Association (University of Miami)</span>
         <ul>
-          <li>Participated in volunteer events and service projects focused on community health.</li>
-          <li>Attended workshops on medical specialties, professionalism, and real-life experiences of medical students and physicians.</li>
-          <li>Developed insight into medical school preparation and career paths in healthcare.</li>
+          <li>Volunteered at health-related events and service projects.</li>
+          <li>Attended workshops on medical specialties and professionalism.</li>
+          <li>Gained insight into medical school preparation and career paths.</li>
         </ul>
       </div>
 
@@ -205,20 +219,17 @@
         <span class="job-title">Member</span> – 
         <span class="company">Healing Across Borders</span>
         <ul>
-          <li>Learned about cultural diversity and the challenges faced by immigrant communities in accessing healthcare.</li>
-          <li>Engaged in volunteer activities that fostered empathy and advocacy for underserved populations.</li>
-          <li>Collaborated with peers to support initiatives promoting global health awareness.</li>
+          <li>Learned about cultural diversity and immigrant healthcare struggles.</li>
+          <li>Participated in volunteer activities supporting underserved communities.</li>
         </ul>
       </div>
 
       <div class="job">
         <span class="job-title">Note-taker</span> – 
-        <span class="company">Office of Disability Student Services</span> 
-        <span class="date">(60+ hours)</span>
+        <span class="company">Office of Disability Student Services</span> <span class="date">(60+ hrs)</span>
         <ul>
-          <li>Provided accurate, detailed class notes for students with disabilities to ensure accessibility and equal learning opportunities.</li>
-          <li>Demonstrated reliability and attention to detail by consistently delivering high-quality materials.</li>
-          <li>Gained experience supporting academic inclusivity and accommodations in higher education.</li>
+          <li>Created detailed notes for students with disabilities.</li>
+          <li>Supported accessibility and inclusivity in academics.</li>
         </ul>
       </div>
 
@@ -226,20 +237,26 @@
         <span class="job-title">Undergraduate Researcher</span> – 
         <span class="company">HHMI Lab</span>
         <ul>
-          <li>Conducted research on the effects of various types of carbon dots on the reproductive organs of <em>Drosophila melanogaster</em>.</li>
-          <li>Assisted in experimental design, data collection, and analysis to understand toxicology and biological interactions.</li>
-          <li>Developed laboratory skills, including microscopy, sample preparation, and maintaining accurate lab records.</li>
+          <li>Researched effects of carbon dots on reproductive organs of <em>Drosophila</em>.</li>
+          <li>Gained experience in data collection, analysis, and microscopy.</li>
         </ul>
       </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills -->
     <section id="skills">
       <h2>Skills</h2>
       <ul>
-        <li><strong>Clinical & Healthcare:</strong> Patient care, taking vitals, administering injections, urinalysis, assisting in medical procedures, healthcare communication.</li>
-        <li><strong>Professional & Interpersonal:</strong> Team collaboration, empathy in patient care, cultural awareness, communication with providers/patients, organizational skills, reliability.</li>
-        <li><strong>Other:</strong> Time management, multitasking in fast-paced environments, customer service.</li>
+        <li>Patient care</li>
+        <li>Taking vitals</li>
+        <li>Administering injections</li>
+        <li>Urinalysis</li>
+        <li>Healthcare communication</li>
+        <li>Team collaboration</li>
+        <li>Empathy in patient care</li>
+        <li>Cultural awareness</li>
+        <li>Organizational skills</li>
+        <li>Customer service</li>
       </ul>
     </section>
 
